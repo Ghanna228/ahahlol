@@ -44,7 +44,15 @@ int main()
 	cout << "   |  |  |       \\  / /" << endl;
 	cout << "   |  |  | __(    |/ /" << endl;
 	cout << "   |__|__|(_______)/ " << endl;
-
+cout << "  /\\_________/\\      z" << endl;
+	cout << " /              \\      z " << endl;
+   cout << "(    __    __    )    Z" << endl;
+   cout << " \\       ^      / Z" << endl;
+	cout << "  \\            \\      __ " << endl;
+	cout << "   |            \\    / /" << endl;
+	cout << "   |  |  |       \\  / /" << endl;
+	cout << "   |  |  | __(    |/ /" << endl;
+	cout << "   |__|__|(_______)/ " << endl;
 	system("pause");
 }
 #include<iostream>
