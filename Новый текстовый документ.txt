@@ -1,0 +1,147 @@
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float r,d;
+	cout << "ввидите первое число " << endl;
+	cin >> r;
+	cout << "ввидите второе число" << endl;
+	cin >> d;
+	if (r > d)
+	{
+		cout << r << endl;
+
+	}
+	if (r < d)
+	{
+		cout << d << endl;
+	}
+	if (r == d)
+	{
+		cout << "они равны" << endl;
+	}
+
+
+	system("pause");
+}
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a;
+	
+
+	cout << "  /\\_________/\\      z" << endl;
+	cout << " /              \\      z " << endl;
+   cout << "(    __    __    )    Z" << endl;
+   cout << " \\       ^      / Z" << endl;
+	cout << "  \\            \\      __ " << endl;
+	cout << "   |            \\    / /" << endl;
+	cout << "   |  |  |       \\  / /" << endl;
+	cout << "   |  |  | __(    |/ /" << endl;
+	cout << "   |__|__|(_______)/ " << endl;
+
+	system("pause");
+}
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a,d,s;
+	int sum;
+	int sum1;
+	int sum2;
+	cout << "ввидите первую сторону  треугольника" << endl;
+	cin >> a;
+	cout << "ввидите вторую сторону  треугольника" << endl;
+	cin >> d;
+	cout << "ввидите третью сторону  треугольника" << endl;
+	cin >> s;
+	sum = a + d;
+	sum1 = a + s;
+	sum2 = s + d;
+
+	if (a + d > s && a + s > d & d + s > a)
+		cout << "треугольник можно построить" << endl;
+	else
+		cout << "треугольник нельзя построить" << endl;
+
+	system("pause");
+	//3 4 5
+}
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a;
+	int s=0; 
+	int d;
+	int max=0;
+	int sr;
+	int min = 1000;
+	cout << "сколько чкеловек посещают спортзал за один день" << endl;
+	cin >> a;
+	for (int i = 0;i < a; i = i + 1)
+	{
+		cout << "как вы думаете сколько ему(ей) лет" << endl;
+		cin >> d;
+		if (d > max)
+		{
+			max = d;
+		}
+		s = s + d;
+		sr = s/a;
+		if (d < min)
+		{
+			min = d;
+		}
+	}
+	cout<<"максимальный возраст "<< max << endl;
+	cout << "средний возраст " << sr << endl;
+	cout << "минимальный возраст" << min << endl;
+	system("pause");
+	//3 4 5
+}
+
+
+#include<iostream>
+#include<ctime>
+using namespace std;
+float Area(float s)
+{
+	if (s < 0)
+	{
+		s = s * -1;
+	}
+	return s;
+}
+void cote()
+{
+
+	cout << "  /\\_________/\\      z                    " << endl;
+	cout << " /              \\      z                " << endl;
+    cout << "(    __    __    )    Z           " << endl;
+    cout << " \\       ^      / Z                    " << endl;
+	cout << "  \\            \\      __              /\\______/\\                         " << endl;
+	cout << "   |            \\    / /             /          \\                         " << endl;
+	cout << "   |  |  |       \\  / /             (   __  __   )_______________    " << endl;
+	cout << "   |  |  | __(    |/ /              /  ___^      /               \\   " << endl;
+	cout << "   |__|__|(_______)/               /  /     \  /  /     ___(    /\\ \\ " << endl;
+	cout << "                                  /__/       /__/_____(_______/__| |  " << endl;
+	cout << "                                                             |_____/  " << endl;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cote();
+	system("pause");
+}

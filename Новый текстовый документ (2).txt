@@ -1,0 +1,102 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	
+	int mas[7];
+	mas[0] = 7;
+	mas[1] = 8;
+	mas[2] = 1;
+	mas[3] = 2;
+	mas[4] = 3;
+	mas[5] = 4;
+	mas[6] = 6;
+	for (int i = 0; i < 7; i++)
+	{
+		cin >> mas[i];
+	}
+	for (int i = 0; i < 7; i++)
+	{
+		if (mas[i] == 0)
+		{
+			mas[i] = 1;
+		}
+		if (mas[i] == 10)
+		{
+			mas[i] = 10 - 1;
+		}
+	}
+	float t = 0;
+	for (int i = 0; i < 7; i++)
+	{
+
+		t = t + mas[i];
+		
+	}
+	for (int i = 0;i < 7; i++)
+	{
+       cout << mas[i] <<" ";
+	 
+	}
+	cout << endl;
+	t = t / 7;
+
+	cout<<"средний балл"<< t << endl;
+	int p=0;
+	for (int i = 0; i < 7; i++)
+	{
+		
+
+		if (mas[i] > t)
+		{
+			p++;
+		}
+	}
+	cout << p <<"ученик(а)"<< endl;
+	
+	system("pause");
+}
+
+#include <iostream>
+#include <ctime>
+using namespace std;
+int  main()
+{
+	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
+	int mas[10];
+
+	const int n = 10;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> mas[i];
+	}
+	cout << endl;
+	int g = mas[0];
+	int a = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (mas[i] > g)
+		{
+			g = mas[i];
+			a = i;
+		}
+	}
+	int s;
+	cout << "у кого из присудствующих день рожденья" << " ";
+	cin >> s;
+	int d = 1000;
+	int t = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (mas[i] >= d)
+		{
+			t++;
+		}
+	}
+	cout << "кто сможет скинуться по 1000" << s << endl;
+	cout << " максимальная зрплата  у " << a << endl;
+	system("pause");
+}
+
